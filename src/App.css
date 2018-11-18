@@ -1,0 +1,170 @@
+
+.navBar{
+  background-color: #565959;
+  overflow: hidden;
+}
+
+/*Floats each item to the left with padding of 14 & 16 px.
+Removes the underline with text decoration = none.*/
+.navBar a{
+  float: right;
+  color: white;
+  padding: 18px 18px;
+  text-decoration: none;
+  font-size: 2em;
+  font-family: Georgia;
+  /*here need to be font-family*/
+}
+
+/*Background color change during hover state*/
+.navBar a:hover{
+  background-color: #424242 ;
+  color: #bdbdbd;
+}
+
+/*Hides the menu Icon which will show when the nav needs to be responsive*/
+.navBar .icon{
+  display: none;
+}
+
+/*Set your custom screen width here replacing 700*/
+@media (max-width: 700px){
+/*Ignores the first link (which is Home) in the div and       applies 'display = none' to everything else.   Basically hiding everything but Home*/
+  .navBar a:not(:first-child){
+    display: none;
+  }
+/*Brings the menu icon into view and floats it to the right*/
+  .navBar a.icon{
+    display: block; float: right;
+  }
+
+/*The navBar class will be changed to 'navBar responsive' using JS. This chunk of CSS makes the menu icon stay where it is by making the position absolute within it's parent 'right top corner'. Without this, the icon will get kicked around when the items are collapsed and expanded*/
+  .navBar.responsive {
+    position: relative;
+
+  }
+  .navBar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+/*Removes the originally set float and brings them to view*/
+  .navBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.navBar {
+ border-right: 50px solid #565959;
+ border-left: 50px solid #565959;
+}
+.logo{
+background: url(\logo.png) no-repeat;
+background-size: 30%;
+position: absolute;
+width: 628px;
+height: 270px;
+}
+
+body{
+        background: #bdbdbd;
+background-size: cover;
+}
+
+
+.nav-wrapper{
+  background: #3c3b37;
+    padding: 0%;
+    font-family: Arial Black;
+}
+
+
+li  {
+  color: white;}
+
+.footer-copyright{font-family: Georgia;}
+
+    .box {
+      position: relative;
+    right: 0;
+    bottom: 0;
+
+        display: inline;
+        margin: 1em;
+    }
+
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 2%;
+        text-align: left;
+        line-height: 2;
+        /* justify-content: space-between;*/
+    }
+
+    .black-text{
+      font-family: 'Comic Sans';
+       margin-bottom: 3%;
+  }
+.white-text {
+font-family: "Microsoft YaHei";}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .info {
+  margin-bottom: 5%;
+    line-height: 2.3;
+  font-size: 2.3em;
+  color: black;
+  font-family: 'Comic Sans'; }
+
+  .article{
+      margin: 5%;  }
+
+.com {
+    font-size: 1.7em;
+    color: black;
+    font-family: "Comic Sans";
+    line-height: 1.2;
+ }
+
+ .ramka{
+   margin-top: 7%;
+   margin-bottom: 7%;
+ }
+
+
+.foot {font-size: 1.5em;
+    color: white;
+  font-family: "Microsoft YaHei";
+}
+.footer-copyright{
+  height: 74px;
+   line-height: 54px;
+}
+.eny{
+    display: inline-block;
+    vertical-align: middle;
+float: left;
+}
+
+.but{
+float: right;
+  }
+
+  .maps {
+    margin-top: 70px;
+    height: 490px;
+    width: 640px;
+    border-color: grey;
+    border-style: outset;
+    border-width: 20px;
+
+  }
